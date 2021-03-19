@@ -33,9 +33,11 @@ void readTemp(){ // читаем температуру и заполняем м
   // Serial.print("Kamera: ");
   // Serial.print(tempSensor[1]);
   // Serial.print(" C, ");
+  // Serial.print("Hotend: ");
+  // Serial.print(ntc);
+  // Serial.print(" C, ");
 
-
-//отключение температуры при превышении порога
+//отключение при превышении порога
 
 if (tempSensor[0] >= 90)            //сверяем установленную температуру
 {

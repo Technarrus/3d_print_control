@@ -14,7 +14,7 @@ BlynkTimer timer; // Объявляем Таймер
 // Отправка на сервер при подключении
 BLYNK_CONNECTED() { //синхронизация виртуального порта для блинка (виджеты установки пределов сарабатывания реле)
   Blynk.virtualWrite(VPIN_TempIn0, String(tempSensor[0],1));
-  Blynk.virtualWrite(VPIN_TempIn1, String(tempSensor[1],1));
+  Blynk.virtualWrite(VPIN_TempIn1, String(ntc,1));
   Blynk.virtualWrite(VPIN_TempIn2, ntc);
   //добавить аналогично, если нужно больше датчиков
 }
@@ -23,7 +23,7 @@ BLYNK_CONNECTED() { //синхронизация виртуального пор
 void SendBlynk(){
     Blynk.virtualWrite(VPIN_TempIn0, String(tempSensor[0],1));        // Температура от датчика 1 (1 задает 10-тые)
     Blynk.virtualWrite(VPIN_TempIn1, String(tempSensor[1],1));        // Температура от датчика 2 (1 задает 10-тые)
-    Blynk.virtualWrite(VPIN_TempIn2, ntc);
+    Blynk.virtualWrite(VPIN_TempIn2, String(ntc,1));
    //добавить аналогично, если нужно больше датчиков 
   }
 
