@@ -61,7 +61,7 @@
 ### РЕЛИЗЫ
 Сюда будут добавляться старые версии
 
-### ВИДЕДО
+### ВИДЕО
 * <a href="https://youtu.be/zlENMWZuub8"> Видео про данный проект</a>
 * <a href="https://www.youtube.com/channel/UCzI016x7MItBtQCJiSWI7yA">Канал YouTube</a>
 * <a href=" ">-</a>
