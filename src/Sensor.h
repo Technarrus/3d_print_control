@@ -27,6 +27,7 @@ void readTemp(){ // читаем температуру и заполняем м
    tempSensor[1] = ds.getTempC(sensor2);
 //.... и далее если нужно больше датчиков
 
+// вывод в монитор порта для тестирования
   // Serial.print("Bed: ");
   // Serial.print(tempSensor[0]);
   // Serial.print(" C, ");
